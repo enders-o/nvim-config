@@ -21,9 +21,13 @@ require('mason-lspconfig').setup({
   ensure_installed = {
 	'pyright',
 	'eslint',
+    'rust_analyzer',
+    'tsserver',
+    'terraformls'
   },
   handlers = {
     lsp.default_setup,
   },
 })
-lsp.setup()
+
+
